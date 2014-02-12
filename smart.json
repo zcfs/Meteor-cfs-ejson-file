@@ -1,0 +1,8 @@
+{
+  "name": "cfs-ejson-file",
+  "description": "CollectionFS, FS.File as EJSON type",
+  "homepage": "https://github.com/Meteor-CollectionFS/Meteor-cfs-ejson-file",
+  "author": "CollectionFS core @aldeed & @raix",
+  "version": "0.0.1",
+  "git": "https://github.com/Meteor-CollectionFS/Meteor-cfs-ejson-file.git"
+}
