@@ -1,18 +1,18 @@
 {
-  "name": "cfs-ejson-file",
-  "description": "CollectionFS, FS.File as EJSON type",
-  "homepage": "https://github.com/CollectionFS/Meteor-cfs-ejson-file",
-  "author": "Eric Dobbertin (https://github.com/aldeed), Morten Henriksen (https://github.com/raix)",
-  "version": "0.0.2",
-  "git": "https://github.com/CollectionFS/Meteor-cfs-ejson-file.git",
-  "packages": {
-    "cfs-base-package": {
-      "git": "https://github.com/CollectionFS/Meteor-cfs-base-package.git",
-      "branch": "master"      
-    }, 
-    "cfs-file": {
-      "git": "https://github.com/CollectionFS/Meteor-cfs-file.git",
-      "branch": "master" 
-    }
-  }  
+	"name": "cfs-ejson-file",
+	"description": "CollectionFS, FS.File as EJSON type",
+	"homepage": "https://github.com/CollectionFS/Meteor-cfs-ejson-file",
+	"author": "Eric Dobbertin (https://github.com/aldeed), Morten Henriksen (https://github.com/raix)",
+	"version": "0.0.3",
+	"git": "https://github.com/CollectionFS/Meteor-cfs-ejson-file.git",
+	"packages": {
+		"cfs-base-package": {
+			"git": "https://github.com/CollectionFS/Meteor-cfs-base-package.git",
+			"branch": "master"
+		},
+		"cfs-file": {
+			"git": "https://github.com/CollectionFS/Meteor-cfs-file.git",
+			"branch": "master"
+		}
+	}
 }
