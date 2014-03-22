@@ -3,7 +3,7 @@
 	"description": "CollectionFS, FS.File as EJSON type",
 	"homepage": "https://github.com/CollectionFS/Meteor-cfs-ejson-file",
 	"author": "Eric Dobbertin (https://github.com/aldeed), Morten Henriksen (https://github.com/raix)",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"git": "https://github.com/CollectionFS/Meteor-cfs-ejson-file.git",
 	"packages": {
 		"cfs-base-package": {},
