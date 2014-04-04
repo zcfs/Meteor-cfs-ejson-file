@@ -5,11 +5,12 @@ Package.describe({
 Package.on_use(function(api) {
 
   api.use([
+    // CFS
     'cfs-base-package',
-    'cfs-file'
+    'cfs-file',
+    // Core
+    'ejson'
   ]);
-
-  api.use(['deps', 'underscore', 'check', 'ejson']);
 
   api.add_files([
     'fsFile-ejson.js',
@@ -21,11 +22,11 @@ Package.on_use(function(api) {
 });
 
 Package.on_test(function (api) {
-  api.use('collectionFS');
+  api.use('cfs-ejson-file');
   api.use('test-helpers', 'server');
   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
            'random', 'deps']);
 
-  api.add_files('tests/client-tests.js', 'server');
-  api.add_files('tests/server-tests.js', 'client');
+  api.add_files('tests/client-tests.js', 'client');
+  api.add_files('tests/server-tests.js', 'server');
 });
