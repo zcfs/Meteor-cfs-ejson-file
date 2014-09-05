@@ -1,14 +1,16 @@
 Package.describe({
+  name: 'cfs:ejson-file',
   version: '0.0.0',
   summary: 'CollectionFS, FS.File as EJSON type'
 });
 
 Package.on_use(function(api) {
+  api.versionsFrom('METEOR@0.9.1');
 
   api.use([
     // CFS
-    'cfs-base-package',
-    'cfs-file',
+    'cfs:base-package@0.0.0',
+    'cfs:file@0.0.0',
     // Core
     'ejson'
   ]);
@@ -23,7 +25,7 @@ Package.on_use(function(api) {
 });
 
 Package.on_test(function (api) {
-  api.use('cfs-ejson-file');
+  api.use('cfs:ejson-file');
   api.use('test-helpers', 'server');
   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
            'random', 'deps']);

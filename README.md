@@ -1,2 +1,2 @@
-CollectionFS, FS.File as EJSON type
+cfs:ejson-file, FS.File as EJSON type
 =========================
