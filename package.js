@@ -1,7 +1,7 @@
 Package.describe({
   git: 'https://github.com/CollectionFS/Meteor-cfs-ejson-file.git',
   name: 'cfs:ejson-file',
-  version: '0.0.0',
+  version: '0.1.0',
   summary: 'CollectionFS, FS.File as EJSON type'
 });
 
@@ -11,7 +11,7 @@ Package.onUse(function(api) {
   api.use([
     // CFS
     'cfs:base-package@0.0.26',
-    'cfs:file@0.0.0',
+    'cfs:file@0.0.14',
     // Core
     'ejson'
   ]);
