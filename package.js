@@ -1,35 +1,36 @@
 Package.describe({
+  git: 'https://github.com/CollectionFS/Meteor-cfs-ejson-file.git',
   name: 'cfs:ejson-file',
   version: '0.0.0',
   summary: 'CollectionFS, FS.File as EJSON type'
 });
 
-Package.on_use(function(api) {
-  api.versionsFrom('METEOR@0.9.1');
+Package.onUse(function(api) {
+  api.versionsFrom('1.0');
 
   api.use([
     // CFS
-    'cfs:base-package@0.0.0',
+    'cfs:base-package@0.0.26',
     'cfs:file@0.0.0',
     // Core
     'ejson'
   ]);
 
-  api.add_files([
+  api.addFiles([
     'fsFile-ejson.js',
   ], 'client');
 
-  api.add_files([
+  api.addFiles([
     'fsFile-ejson.js',
   ], 'server');
 });
 
-Package.on_test(function (api) {
+Package.onTest(function (api) {
   api.use('cfs:ejson-file');
   api.use('test-helpers', 'server');
   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
            'random', 'deps']);
 
-  api.add_files('tests/client-tests.js', 'client');
-  api.add_files('tests/server-tests.js', 'server');
+  api.addFiles('tests/client-tests.js', 'client');
+  api.addFiles('tests/server-tests.js', 'server');
 });
