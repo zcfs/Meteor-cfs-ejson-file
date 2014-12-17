@@ -11,7 +11,7 @@ Package.onUse(function(api) {
   api.use([
     // CFS
     'cfs:base-package@0.0.27',
-    'cfs:file@0.0.15',
+    'cfs:file@0.1.14',
     // Core
     'ejson'
   ]);
