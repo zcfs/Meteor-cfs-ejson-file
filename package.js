@@ -1,6 +1,6 @@
 Package.describe({
-  git: 'https://github.com/CollectionFS/Meteor-cfs-ejson-file.git',
-  name: 'cfs:ejson-file',
+  git: 'https://github.com/zcfs/Meteor-cfs-ejson-file.git',
+  name: 'zcfs:ejson-file',
   version: '0.1.4',
   summary: 'CollectionFS, FS.File as EJSON type'
 });
@@ -10,8 +10,8 @@ Package.onUse(function(api) {
 
   api.use([
     // CFS
-    'cfs:base-package@0.0.27',
-    'cfs:file@0.1.15',
+    'zcfs:base-package@0.0.27',
+    'zcfs:file@0.1.15',
     // Core
     'ejson'
   ]);
@@ -26,7 +26,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function (api) {
-  api.use('cfs:ejson-file');
+  api.use('zcfs:ejson-file');
   api.use('test-helpers', 'server');
   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
            'random', 'deps']);

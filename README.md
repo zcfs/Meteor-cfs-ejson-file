@@ -1,4 +1,4 @@
-cfs:ejson-file, FS.File as EJSON type
+zcfs:ejson-file, FS.File as EJSON type
 =========================
 
 ~~Looking for maintainers - please reach out!~~
